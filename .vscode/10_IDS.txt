@@ -1,0 +1,32 @@
+EXPERIMENT 10 – Intrusion Detection System (Snort)
+This experiment uses Snort commands and a custom rule, not a Python program.
+10(a). Custom Snort Rule
+Add this to local.rules:
+
+alert icmp any any -> any any (msg:"LAB ICMP Ping Detected"; sid:1000001; rev:1;)
+
+
+
+10(b). Test configuration
+sudo snort -T -c /etc/snort/snort.conf
+
+
+10(c). Start Snort
+sudo snort -A console -q -c /etc/snort/snort.conf -i eth0
+
+
+10(d). Generate ping traffic
+Run from another terminal on your authorized lab network:
+ping -c 4 192.168.1.20
+
+
+Expected alert:
+[**] [1:1000001:1] LAB ICMP Ping Detected [**]
+
+{ICMP} 192.168.1.10 -> 192.168.1.20
+
+
+
+Important: Libraries to install before the exam
+Run these commands if the corresponding packages are not installed:
+pip install pycryptodome numpy

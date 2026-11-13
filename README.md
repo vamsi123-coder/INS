@@ -1,7 +1,5 @@
 # Information and Network Security (INS) -- Practical Experiments
 
-This README contains the aim and a short description of all experiments
-in the INS practical record.
 
 ## Experiment 1 -- Classical Encryption Techniques
 
@@ -170,51 +168,4 @@ ICMP rule is used to detect ping traffic in a controlled, authorized
 laboratory network. When matching traffic is observed, Snort generates
 an alert.
 
-## Quick Revision
 
-  -----------------------------------------------------------------------
-  Experiment              Topic                   Main concept
-  ----------------------- ----------------------- -----------------------
-  1(a)                    Caesar Cipher           Character shifting
-
-  1(b)                    Playfair Cipher         Pair-of-letter
-                                                  substitution using a 5
-                                                  × 5 matrix
-
-  1(c)                    Hill Cipher             Matrix multiplication
-                                                  modulo 26
-
-  2(a)                    Rail Fence              Zigzag transposition
-
-  2(b)                    Row Transformation      Matrix-based
-                                                  transposition
-
-  2(c)                    Column Transformation   Key-based column
-                                                  ordering
-
-  3                       DES                     Symmetric-key block
-                                                  encryption
-
-  4                       AES                     Symmetric-key block
-                                                  encryption
-
-  5                       RSA                     Public-key and
-                                                  private-key
-                                                  cryptography
-
-  6                       Diffie-Hellman          Shared secret key
-                                                  agreement
-
-  7                       SHA-256                 One-way cryptographic
-                                                  hashing
-
-  8                       DSS / DSA               Digital signature
-                                                  generation and
-                                                  verification
-
-  9                       SSL / TLS               Secure client-server
-                                                  communication
-
-  10                      Snort IDS               Rule-based network
-                                                  intrusion detection
-  -----------------------------------------------------------------------
